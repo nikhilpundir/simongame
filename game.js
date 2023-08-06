@@ -6,7 +6,7 @@ var userClickedPattern=[];
 var gameStart=false;
 var level=0;
 
-$(document).on("keydown",function(){
+$(document).on("keydown touchstart",function(){
     if(!gameStart){
         $("#level-title").text("Level "+level);
         nextSequence();
